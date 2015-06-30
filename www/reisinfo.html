@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>EXPLRS</title>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="js/javascript.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="app reis-data container">
+			<header>
+				<img class="app-logo" src="img/logo2.png" />
+				<div class="sync">
+					<img id="syncing" src="img/sync.png" data-toggle="modal" data-target=".bs-example-modal-sm"/>
+				</div>
+				<div class="logged-in">
+					<img src="img/avatar.jpg">
+				</div>
+			</header>
+			<div class="content">
+				<div class="not-synced">
+					<span class="sync-files">
+					<p>Je hebt nog geen data ingeladen.</p> <p>Verbind met WiFi en druk op</p> <i class="fa fa-refresh fa-3x"></i> <p>om je samengestelde reis in deze app te laden.</p>
+					</span>
+				</div>
+				<div class="country-map">
+					<div class="what-country">
+						<h1>Thailand</h1><img src="img/flag-thailand.png">
+						<div class="totaal-nachten">16 nachten</div>
+					</div>
+					<div class="steden" id="stad1">
+						<i class="fa fa-circle fa-md"></i>
+						<span>Bangkok</span>
+					</div>
+					<div class="steden" id="stad2">
+						<i class="fa fa-circle fa-md"></i>
+						<span>Chiang Mai</span>
+					</div>
+					<div class="steden" id="stad3">
+						<i class="fa fa-circle fa-md"></i>
+						<span>Pattaya</span>
+					</div>
+					<div class="steden" id="stad4">
+						<span>Phuket</span>
+						<i class="fa fa-circle fa-md"></i>
+					</div>
+					<div class="steden" id="stad5">
+						<i class="fa fa-circle fa-md"></i>
+						<span>Ko Samui</span>
+					</div>
+					<div class="steden" id="stad6">
+						<i class="fa fa-circle fa-md"></i>
+						<span>Krabi Town</span>
+					</div>
+					<div class="steden" id="stad7">
+						<span>Ayutthaya</span>
+						<i class="fa fa-circle fa-md"></i>
+					</div>
+					<div class="steden" id="stad8">
+						<i class="fa fa-circle fa-md"></i>
+						<span>Pai</span>
+					</div>
+					<img src="img/thailand.png">
+				</div>
+				<div class="stad-info1">
+					<div class="activities">
+						<h1>BANGKOK</h1>
+						<div class="nachten">4 nachten</div>
+						<div class="title">MIJN ACTIVITEITEN<i class="fa fa-eye fa-md"></i></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne"  data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/1.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">WAT TRAIMIT</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>2 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>40</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>8 AM - 10 PM</span>
+									</div>
+									<div class="interesse">TEMPELS</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									Een van de grootste Buddha's ter wereld, een 3 meter hoge en 5.5 ton zware Buddha die helemaal goud glanst. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Th Mitthaphap</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Ferry of Metro</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" >
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/2.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">MOON BAR</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>2 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>GEEN</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>2 PM - 1 AM</span>
+									</div>
+									<div class="interesse">UITZICHT</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								<div class="panel-body">
+									Een bar bovenop de 61ste verdieping van de Banyan Tree Hotel, hier krijg je het mooiste uitzicht over de stad. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>21/100 Th Sathon</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Metro</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/3.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Dusit Palace Park</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>4 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>100</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>10 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Historie</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+								<div class="panel-body">
+									Rama V's eerste bezoek aan Europa in 1897 (hij was de eerste Thaise koning die dit continent bezocht) leide tot dit paleis dat hij heeft laten bouwen aan de hand van de dingen die hij had gezien in Europa.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Th Ratchawithi, Th U Thong Nai</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Subway of Ferry</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFour" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/4.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">JIM THOMPSON HOUSE</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>2 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>100</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>8 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Historie</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+								<div class="panel-body">
+									Bekijk het huis van deze ondernemer en kunst verzamelaar die tijdens de WWII werkte voor the Office of Strategic Services in Thailand (de voorloper van de CIA)
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Soi Kasem San 2</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Subway of Ferry</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFive" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/5.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Floating Markets of Damnoen Saduak Cruise </div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>6 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>1400</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>12 AM - 8 PM</span>
+									</div>
+									<div class="interesse">Water</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+								<div class="panel-body">
+									Vaar door de oude grachten van Bangkok en kom langs verschillende drijvende marktjes waar men veelal fruit en lekkernijen verkoopt.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Ophalen en terug brengen</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Jou verblijfplaats</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSix" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/6.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Bangkok Walking Adventures </div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>8 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>va. 1000</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>8 AM - 8 PM</span>
+									</div>
+									<div class="interesse">Actief</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+								<div class="panel-body">
+									Een hele dag wandelen door het prachtige Bangkok, begeleid door een gids die je naar de mooise en onbekende plekjes van Bangkok brengt.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>646 Charoenkrung Road</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Tuk Tuk</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSeven" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/7.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Ardel Gallery of Modern Art</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>4 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>GEEN</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>8 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Kunst & Cultuur</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+								<div class="panel-body">
+									Ookal ligt het ver van het centrum af, Ardel behoort tot een van de bekendste gallerijen van Bangkok.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Th Boromaratchatchonanee 18</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Tram</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="go-back">Naar stad selectie <i class="fa fa-caret-up fa-lg"></i></div>
+				</div>
+<!-- #### CONTENT2 #### -->
+				<div class="stad-info2">
+					<div class="activities">
+						<h1>CHIANG MAI</h1>
+						<div class="nachten">3 nachten</div>
+						<div class="title">MIJN ACTIVITEITEN<i class="fa fa-eye fa-md"></i></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwoOne" data-toggle="collapse" data-parent="#accordion" href="#collapseTwoOne" aria-expanded="true" aria-controls="collapseTwoOne">
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/8.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Elephant Trek, Rafting and Hilltribe Village Tour</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>9 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>3280</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>8 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Actief</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwoOne" aria-expanded="true" aria-controls="collapseTwoOne" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseTwoOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwoOne">
+								<div class="panel-body">
+									Loop door de jungle van Chiang Mai, rijd een stukje op een olifant en raft over de ping rivier. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Ophalen en terug brengen</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Jou verblijfplaats</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwoTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwoTwo" aria-expanded="true" aria-controls="collapseTwoTwo"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/9.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Traditional Khantoke Dinner and Show</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>3 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>va. 920</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>4 PM - 1 AM</span>
+									</div>
+									<div class="interesse">Lokaal eten</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwoTwo" aria-expanded="true" aria-controls="collapseTwoTwo" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseTwoTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwoTwo">
+								<div class="panel-body">
+									Geniet van je Thaise dinner geserveerd in kleine kommetjes op een lage tafel, ondertussen kijk je naar verschillende lokalen uitvoeringen tijdens de show.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Ophalen en terug brengen</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Jou verblijfplaats</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwoThree" data-toggle="collapse" data-parent="#accordion" href="#collapseTwoThree" aria-expanded="true" aria-controls="collapseTwoThree"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/10.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Wat Chedi Luang</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>2 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>GEEN</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>8 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Kunst & Cultuur</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwoThree" aria-expanded="true" aria-controls="collapseTwoThree" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseTwoThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwoThree">
+								<div class="panel-body">
+									Vroeger het langste bouwwerk in de provincie Chiang Mai, gebouwt in het jaar 1441. Dit oude bouwwerk is in 1775 flink beschadigd geweest door een aardbeving of kanonsschoten. Deze tempel werdt vaak gebruikt door monikken om te mediteren.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Th Phra Pokklao</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Tuk Tuk</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwoFour" data-toggle="collapse" data-parent="#accordion" href="#collapseTwoFour" aria-expanded="true" aria-controls="collapseTwoFour"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/11.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Huay Teung Thao Reservoir</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>4 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>20</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>10 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Ontspanning</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwoFour" aria-expanded="true" aria-controls="collapseTwoFour" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseTwoFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwoFour">
+								<div class="panel-body">
+									Relax bij deze water reservoirs in een van de drijvende bamboe hutjes en probeer een aantal van Thailands versnaperingen.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>-</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Metro of Subway</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwoFive" data-toggle="collapse" data-parent="#accordion" href="#collapseTwoFive" aria-expanded="true" aria-controls="collapseTwoFive"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/12.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Live Like a Local: Rice Farmer for a Day</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>8.5 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>1320</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>8 AM - 6 PM</span>
+									</div>
+									<div class="interesse">Historie</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwoFive" aria-expanded="true" aria-controls="collapseTwoFive" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseTwoFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwoFive">
+								<div class="panel-body">
+									Ga een dag door het leven als een rijst teler, ervaar het werken op een groot rijst veld, ruil je kleren om voor traditionele boeren kleding  en leer over het proces van het verbouwen van rijst. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Ophalen en terug brengen</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Jou verblijfplaats</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="go-back">Naar stad selectie <i class="fa fa-caret-up fa-lg"></i></div>
+				</div>
+<!-- #### CONTENT3 #### -->
+				<div class="stad-info3">
+					<div class="activities">
+						<h1>PATTAYA</h1>
+						<div class="nachten">1 nacht</div>
+						<div class="title">MIJN ACTIVITEITEN<i class="fa fa-eye fa-md"></i></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThreeOne" data-toggle="collapse" data-parent="#accordion" href="#collapseThreeOne" aria-expanded="true" aria-controls="collapseThreeOne">
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/13.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Flight of the Gibbon</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>7 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>3000</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>10 AM - 8 PM</span>
+									</div>
+									<div class="interesse">actief</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseThreeOne" aria-expanded="true" aria-controls="collapseThreeOne" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseThreeOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeOne">
+								<div class="panel-body">
+									Survival een route van 3 km waar je op 26 platformen door de open safari van Khao Keeo heen swiert. Naast deze survival route kun je een bezoekje brengen aan de naast liggende dierentuin en kun je nog een obstakel route lopen. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Khao Keeo Safari</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Taxi</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThreeTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseThreeTwo" aria-expanded="true" aria-controls="collapseThreeTwo"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/14.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">ANEK KUSALA SALA</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>3 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>~50</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>10 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Kunst & Cultuur</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseThreeTwo" aria-expanded="true" aria-controls="collapseThreeTwo" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseThreeTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeTwo">
+								<div class="panel-body">
+									Dit museum is ooit gebouwd als vriendschaps bouwwerk tussen Thailand en China. Vandaar dat je er ook veel Chinese kunstwerken kunt bewonderen. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Th Sukhumvit</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Tuk Tuk</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThreeThree" data-toggle="collapse" data-parent="#accordion" href="#collapseThreeThree" aria-expanded="true" aria-controls="collapseThreeThree"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/15.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Mermaids Scuba Diving</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>7 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>va. 1000</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>8 AM - 7 PM</span>
+									</div>
+									<div class="interesse">Water (sport)</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseThreeThree" aria-expanded="true" aria-controls="collapseThreeThree" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseThreeThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeThree">
+								<div class="panel-body">
+									Neem een kijkje onder water en bewonder de mooiste plekken rondom Pattaya, snorkel wat rond of ga diep zee duiken.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Soi White House</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Tuk Tuk</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="go-back">Naar stad selectie <i class="fa fa-caret-up fa-lg"></i></div>
+				</div>
+<!-- #### CONTENT4 #### -->
+				<div class="stad-info4">
+					<div class="activities">
+						<h1>PHUKET</h1>
+						<div class="nachten">2 nachten</div>
+						<div class="title">MIJN ACTIVITEITEN<i class="fa fa-eye fa-md"></i></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFourOne" data-toggle="collapse" data-parent="#accordion" href="#collapseFourOne" aria-expanded="true" aria-controls="collapseFourOne">
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/16.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Introduction City Sightseeing Tour</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>5 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>~300</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>8 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Actief</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseFourOne" aria-expanded="true" aria-controls="collapseFourOne" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseFourOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourOne">
+								<div class="panel-body">
+									Krijg een mooie indruk van de stranden van Phuket, bezoek aan plaatsen met een prachtig uitzicht. Rijd daarna door Phuket town waar je verschillende Sino-Portugese architectuur vind.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Ophalen en terug brengen</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Jou verblijfplaats</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFourTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseFourTwo" aria-expanded="true" aria-controls="collapseFourTwo"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/17.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Thaihua Museum</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>4 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>200</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>10 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Kunst & Cultuur</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseFourTwo" aria-expanded="true" aria-controls="collapseFourTwo" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseFourTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourTwo">
+								<div class="panel-body">
+									Dit museum wat eerst een school voor de chinese taal was laat de geschiedenis van Phuket zien. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>28 Th Krabi</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Tuk Tuk</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFourThree" data-toggle="collapse" data-parent="#accordion" href="#collapseFourThree" aria-expanded="true" aria-controls="collapseFourThree"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/18.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Khao Rang</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>4 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>GEEN</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>0 AM - 12 PM</span>
+									</div>
+									<div class="interesse">ACTIEF</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseFourThree" aria-expanded="true" aria-controls="collapseFourThree" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseFourThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourThree">
+								<div class="panel-body">
+									Beklim de Khao Rang voor een adembenemend uitzicht, voor de echte wandel liefhebbers is deze berg te beklimmen, maar een ritje met de taxi is ook mogelijk. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Phuket Hill</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Lopen</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFourFour" data-toggle="collapse" data-parent="#accordion" href="#collapseFourFour" aria-expanded="true" aria-controls="collapseFourFour"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/19.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Suay Cooking School</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>3.5 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>1800</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>8 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Lokaal eten</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseFourFour" aria-expanded="true" aria-controls="collapseFourFour" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseFourFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourFour">
+								<div class="panel-body">
+									Leer Thais koken van een van de beste koks van Phuket. Hij laat je op de lokale markt zien hoe je een heerlijk 3 gangen diner bereidt. Geniet daarna onder het genot van een wijntje van het diner. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>50/2 Th Takuapa</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Tuk Tuk</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="go-back">Naar stad selectie <i class="fa fa-caret-up fa-lg"></i></div>
+				</div>
+<!-- #### CONTENT5 #### -->
+				<div class="stad-info5">
+					<div class="activities">
+						<h1>KO SAMUI</h1>
+						<div class="nachten">2 nachten</div>
+						<div class="title">MIJN ACTIVITEITEN<i class="fa fa-eye fa-md"></i></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFiveOne" data-toggle="collapse" data-parent="#accordion" href="#collapseFiveOne" aria-expanded="true" aria-controls="collapseFiveOne">
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/20.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Nam Tok Na Muang</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>4 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>GEEN</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>0 AM - 12 PM</span>
+									</div>
+									<div class="interesse">ACTIEF</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseFiveOne" aria-expanded="true" aria-controls="collapseFiveOne" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseFiveOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFiveOne">
+								<div class="panel-body">
+									Deze 30 meter lange waterval is de langste van dit eiland en kets op verschillende paarse rotsen daarnaast is er een mogelijk om te zwemmen.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Nam Tok Na Muang</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Taxi</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFiveTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseFiveTwo" aria-expanded="true" aria-controls="collapseFiveTwo"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/21.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Ban Hua Thanon</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>4 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>GEEN</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>8 AM - 12 PM</span>
+									</div>
+									<div class="interesse">Actief</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseFiveTwo" aria-expanded="true" aria-controls="collapseFiveTwo" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseFiveTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFiveTwo">
+								<div class="panel-body">
+									Bekijk een heus islamitisch dorpje in Thailand, naast het boeddhisme houden zij zich ook aan het islamitische geloof. De oude houte huizen die zo'n 50 tot 60 jaar oud zijn hebben een antieke uitstraling. Bezoek verder de plaatselijke moskee en loop over de lokale markt. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Ring Rd</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Taxi</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFiveThree" data-toggle="collapse" data-parent="#accordion" href="#collapseFiveThree" aria-expanded="true" aria-controls="collapseFiveThree"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/22.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Bo Phut</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>3 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>GEEN</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>8 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Lokale bevolking</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseFiveThree" aria-expanded="true" aria-controls="collapseFiveThree" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseFiveThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFiveThree">
+								<div class="panel-body">
+									Een vissermans dorpje met kleine chinese winkelhuisjes die zijn getransformeerd in trendy resorts en hotels.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Bo Phut</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Taxi</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFiveFour" data-toggle="collapse" data-parent="#accordion" href="#collapseFiveFour" aria-expanded="true" aria-controls="collapseFiveFour"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/23.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Wat Phra Yai</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>2 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>GEEN</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>8 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Kunst & Cultuur</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseFiveFour" aria-expanded="true" aria-controls="collapseFiveFour" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseFiveFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFiveFour">
+								<div class="panel-body">
+									Helemaal in het noorden van Samui vind je een 15 meter hoge moderne buddham, daarnaast ligt er de nieuwe tempel Wat Plai Laem waar een enorme buddha met 18 armen staat. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>-</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Taxi</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFiveFive" data-toggle="collapse" data-parent="#accordion" href="#collapseFiveFive" aria-expanded="true" aria-controls="collapseFiveFive"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/24.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Wat Khunaram</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>3 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>GEEN</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>8 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Historie</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseFiveFive" aria-expanded="true" aria-controls="collapseFiveFive" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseFiveFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFiveFive">
+								<div class="panel-body">
+									Sommige tempels hebben de overblijfselen van monniken, in Wat Khunaram zijn de overblijfselen van monnik Luang Phaw Daeng te bewonderen die nog in een kleermakers zit en een zonnebril draagt. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Th Ban Thurian</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Tuk Tuk</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="go-back">Naar stad selectie <i class="fa fa-caret-up fa-lg"></i></div>
+				</div>
+<!-- #### CONTENT6 #### -->
+				<div class="stad-info6">
+					<div class="activities">
+						<h1>KRABI TOWN</h1>
+						<div class="nachten">2 nachten</div>
+						<div class="title">MIJN ACTIVITEITEN<i class="fa fa-eye fa-md"></i></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSixOne" data-toggle="collapse" data-parent="#accordion" href="#collapseSixOne" aria-expanded="true" aria-controls="collapseSixOne">
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/25.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Phang Nga Bay Tour</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>8 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>3200</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>7 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Water (sport)</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseSixOne" aria-expanded="true" aria-controls="collapseSixOne" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseSixOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixOne">
+								<div class="panel-body">
+									Deze tour leidt je naar de mooiste plekken rondom Krabi Town, waar je langs prachtige witte stranden komt, verschillende koraal riffen kunt bewonderen, waar je langs kleine eilandjes komt die als een naald in de zee steken en kom je langs interessante archeologische overblijfselen. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Ophalen en terug brengen</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Jou verblijfplaats</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSixTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseSixTwo" aria-expanded="true" aria-controls="collapseSixTwo"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/26.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Krabi Hot Stream and Rainforest Tour</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>8 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>2350</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>7 AM - 10 PM</span>
+									</div>
+									<div class="interesse">ACTIEF</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseSixTwo" aria-expanded="true" aria-controls="collapseSixTwo" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseSixTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixTwo">
+								<div class="panel-body">
+									Ga het regenwoud in en bewonder de mooie natuur, zwem in een natuurlijk zwembad en kom langs oude palmolie en rubber plantages waar nog altijd hete stoom vandaan komt. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Ophalen en terug brengen</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Jou verblijfplaats</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSixThree" data-toggle="collapse" data-parent="#accordion" href="#collapseSixThree" aria-expanded="true" aria-controls="collapseSixThree"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/27.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Rock Climbing at Railay Beach</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>5 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>va. 1400</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>7 AM - 8 PM</span>
+									</div>
+									<div class="interesse">ACTIEF</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseSixThree" aria-expanded="true" aria-controls="collapseSixThree" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseSixThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixThree">
+								<div class="panel-body">
+									Leer in 3.5 uur hoe je kunt rotswand klimmen, met professionele uitrusting ga jij naar de top van deze wand. Geniet ondertussen van het panoramische uitzicht. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Ophalen en terug brengen</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Jou verblijfplaats</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="go-back">Naar stad selectie <i class="fa fa-caret-up fa-lg"></i></div>
+				</div>
+<!-- #### CONTENT7 #### -->
+				<div class="stad-info7">
+					<div class="activities">
+						<h1>AYUTTHAYA</h1>
+						<div class="nachten">1 nacht</div>
+						<div class="title">MIJN ACTIVITEITEN<i class="fa fa-eye fa-md"></i></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSevenOne" data-toggle="collapse" data-parent="#accordion" href="#collapseSevenOne" aria-expanded="true" aria-controls="collapseSevenOne">
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/28.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Wat Phanan Choeng</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>3 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>~20</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>10 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Kunst & Cultuur</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseSevenOne" aria-expanded="true" aria-controls="collapseSevenOne" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseSevenOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSevenOne">
+								<div class="panel-body">
+									Bezoek deze tempel waar ze vuurwerk gebruiken en vissen voeren tijdens ceremonies. Er is een 19 meter hoge buddha aanwezig die omringt is door 84.000 buddha afbeeldingen.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>-</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Tuk Tuk</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSevenTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseSevenTwo" aria-expanded="true" aria-controls="collapseSevenTwo"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/29.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Wat Chai Wattanaram</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>2 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>~50</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>10 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Kunst & Cultuur</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseSevenTwo" aria-expanded="true" aria-controls="collapseSevenTwo" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseSevenTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSevenTwo">
+								<div class="panel-body">
+									40 jaar geleden stond deze tempel nog midden in de wilde jungle. Tegenwoordig is het Ayuthaya's meest gefotografeerde tempel dankzij de 35 meter hoge Buddha die er staat.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>-</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Tuk Tuk</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSevenThree" data-toggle="collapse" data-parent="#accordion" href="#collapseSevenThree" aria-expanded="true" aria-controls="collapseSevenThree"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/30.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Wat Phra Si Sanphet</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>2 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>50</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>10 AM - 8 PM</span>
+									</div>
+									<div class="interesse">Historie</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseSevenThree" aria-expanded="true" aria-controls="collapseSevenThree" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseSevenThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSevenThree">
+								<div class="panel-body">
+									Gebouwd in de 15de eeuw en Ayuthaya's grootste tempel. Ooit had deze tempel een 16 meter hoge Buddha bestaande uit 250 kilogram goud. Helaas is deze gesmolten door Birmaanse veroveraars.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>-</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Tuk Tuk</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSevenFour" data-toggle="collapse" data-parent="#accordion" href="#collapseSevenFour" aria-expanded="true" aria-controls="collapseSevenFour"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/31.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Million Toy Museum</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>3 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>50</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>10 AM - 8 PM</span>
+									</div>
+									<div class="interesse">Historie</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseSevenFour" aria-expanded="true" aria-controls="collapseSevenFour" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseSevenFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSevenFour">
+								<div class="panel-body">
+									Een museum waar jij je favoriete speeltje van vroeger misschien wel tegenkomt. Er is niet alleen speelgoed te vinden, maar ook oude Buddhistische amuletten en antieke Thaise valuta.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>-</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Tuk Tuk</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSevenFive" data-toggle="collapse" data-parent="#accordion" href="#collapseSevenFive" aria-expanded="true" aria-controls="collapseSevenFive"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/32.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Gahn Glooay</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>3 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>va. 120</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>4 PM - 1 AM</span>
+									</div>
+									<div class="interesse">Lokaal eten</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseSevenFive" aria-expanded="true" aria-controls="collapseSevenFive" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseSevenFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSevenFive">
+								<div class="panel-body">
+									Wanneer je wilt genieten van een typisch Thais gerecht en tegelijkertijd wilt luisteren naar de geweldige optredens van Karaoke dan vermaak jij je wel een avond hier. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Th Rotchana</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Tuk Tuk</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="go-back">Naar stad selectie <i class="fa fa-caret-up fa-lg"></i></div>
+				</div>
+<!-- #### CONTENT8 #### -->
+				<div class="stad-info8">
+					<div class="activities">
+						<h1>PAI</h1>
+						<div class="nachten">1 nacht</div>
+						<div class="title">MIJN ACTIVITEITEN<i class="fa fa-eye fa-md"></i></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingEightOne" data-toggle="collapse" data-parent="#accordion" href="#collapseEightOne" aria-expanded="true" aria-controls="collapseEightOne">
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/33.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Aroma Pai Spa</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>3 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>va. 750</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>10 AM - 10 PM</span>
+									</div>
+									<div class="interesse">Ontspanning</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseEightOne" aria-expanded="true" aria-controls="collapseEightOne" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseEightOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEightOne">
+								<div class="panel-body">
+									Bied baden en massages aan in privé kamers, heeft een groot zwembad en verschillende spa behandelingen.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>110 Moo 2</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Tuk Tuk</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingEightTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseEightTwo" aria-expanded="true" aria-controls="collapseEightTwo"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/34.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Wat Nam Hoo</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>2 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>GEEN</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>0 AM - 12 PM</span>
+									</div>
+									<div class="interesse">Kunst & Cultuur</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseEightTwo" aria-expanded="true" aria-controls="collapseEightTwo" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseEightTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEightTwo">
+								<div class="panel-body">
+									Een tempel met een buddha waar vroeger heilig water uit zou hebben gestroomd. Hier kun je alles vinden over dat heilig water. 
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Ban Nam Hoo</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Taxi</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingEightThree" data-toggle="collapse" data-parent="#accordion" href="#collapseEightThree" aria-expanded="true" aria-controls="collapseEightThree"> 
+								<div class="col-xs-1 wrapper-image">
+									<img src="images/35.jpg" />
+								</div>
+								<div class="col-xs-10 wrapper-title">
+									<div class="title-activiteit">Thai Style BBQ</div>
+									<div class="time">
+										<i class="fa fa-clock-o fa-lg"></i>
+										<span>3 uur</span>
+									</div>
+									<div class="price">
+										<i class="fa fa-yen fa-lg"></i>
+										<span>va. 140</span>
+									</div>
+									<div class="opening">
+										<i class="fa fa-building-o fa-lg"></i>
+										<span>4 PM - 1 AM</span>
+									</div>
+									<div class="interesse">Lokaal eten</div>
+								</div>
+								<div class="col-xs-1 wrapper-expand">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapseEightThree" aria-expanded="true" aria-controls="collapseEightThree" class="rotate">
+										<i class="fa fa-angle-down fa-lg"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div id="collapseEightThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEightThree">
+								<div class="panel-body">
+									Geniet van een echte Thaise BBQ, er is keus uit veel verschillende vlees en groente soorten en er is live muziek aanwezig.
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="center">
+												<span class="adress">
+													<i class="fa fa-map-marker fa-lg"></i>
+													<span>Th Khetkelang</span>
+												</span> 
+												<span class="vervoer">
+													<i class="fa fa-subway fa-lg"></i>
+													<span>Tuk Tuk</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="go-back">Naar stad selectie <i class="fa fa-caret-up fa-lg"></i></div>
+				</div>
+				<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+					<div class="modal-dialog modal-sm">
+						<div class="modal-content">
+							<img src="img/splash-load.png" class="synchronize">
+							<h4 class="modal-title" id="myModalLabel">Synchroniseren...</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>	
+	</body>
+</html>
